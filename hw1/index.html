@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>WWW Homework 1</title>
+    <style>
+      html body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        height: 3rem;
+        padding: 0 1rem;
+        background-color: #22242d;
+        color: #fff;
+      }
+
+      header .effect {
+        display: flex;
+        height: 100%;
+        z-index: 1;
+        cursor: pointer;
+      }
+
+      header .effect .block {
+        height: 100%;
+        width: 6rem;
+      }
+
+      header .effect .block .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+
+      header .effect .block .title:hover {
+        background-color: #61a025;
+      }
+
+      header .effect .block ul {
+        display: none;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      header .effect .block ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        background-color: #22242d;
+      }
+
+      header .effect .block.block-a:hover ul {
+        display:block;
+      }
+
+      header .effect .block.block-b:hover ul {
+        display:block;
+      }
+
+      header .effect .block.block-c:hover ul {
+        display:block;
+      }
+
+      header .effect .block.block-d:hover ul {
+        display:block;
+      }
+
+      header .effect .block.block-a ul li:hover {
+        background-color: #ff5dab;
+        transform: scale(1.2);
+      }
+
+      header .effect .block.block-b ul li:hover {
+        background-color: #3e3e3f;
+        transform: translateX(-1.5rem);
+      }
+
+      header .effect .block.block-c ul li:hover {
+        background-color: #c37f2b;
+        transform: rotate(-15deg);
+      }
+
+      header .effect .block.block-d ul li:hover {
+        background-color: #2042d5;
+        transform: skewX(30deg);
+        transform-origin: 50% 100%;
+      }
+
+      header .social img {
+        max-height: 3rem;
+        transition-duration: 1s;
+      }
+
+      header .social .facebook img:hover {
+        transform: scale(1.5);
+        transition-duration: 1s;
+      }
+
+      header .social .twitter img:hover {
+        transform: scaleX(2);
+        transition-duration: 1s;
+      }
+
+      header .social .linkedin img:hover {
+        transform: rotate(360deg);
+        transition-duration: 1s;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      main table {
+        margin: 1.5rem 0;
+        box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.5);
+        border-collapse: collapse;
+      }
+
+      main table th, main table td {
+        border: 1px solid #000;
+        overflow: hidden;
+      }
+
+      main table thead tr:first-child {
+        height: 2.5rem;
+        background-color: #6a2bcc;
+      }
+
+      main table tbody tr td {
+        vertical-align: top;
+      }
+
+      main table tbody tr td:first-child {
+        background-color: #f3c529;
+      }
+
+      main table tbody tr td:nth-child(2):hover {
+        background-color: #3ed124;
+      }
+
+      main table tbody tr td img {
+        max-width: 480px;
+        transition-duration: 1s;
+      }
+
+      main table tbody tr td img.seto-kaiba:hover {
+        transform: translateX(5rem);
+        transition-duration: 1s;
+      }
+
+      main table tbody tr td img.yugi-mutou:hover {
+        transform: translateY(-5rem);
+        transition-duration: 1s;
+      }
+
+      footer {
+        display: flex;
+        align-items: center;
+        height: 2rem;
+        background-color: #bcbcbc;
+      }
+
+      footer span {
+        width: 18rem;
+        text-align: center;
+        animation: marquee 15s linear infinite;
+      }
+
+      @keyframes marquee {
+        0%   { transform: translateX(0); }
+        50%  { transform: translateX(calc(100vw - 18.5rem)); }
+        100% { transform: translateX(0); }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="effect">
+        <div class="block block-a">
+          <div class="title">
+            <span>Block_A</span>
+          </div>
+
+          <ul>
+            <li><span>A-1</span></li>
+            <li><span>A-2</span></li>
+            <li><span>A-3</span></li>
+          </ul>
+        </div>
+
+        <div class="block block-b">
+          <div class="title">
+            <span>Block_B</span>
+          </div>
+
+          <ul>
+            <li><span>B-1</span></li>
+            <li><span>B-2</span></li>
+            <li><span>B-3</span></li>
+          </ul>
+        </div>
+
+        <div class="block block-c">
+          <div class="title">
+            <span>Block_C</span>
+          </div>
+
+          <ul>
+            <li><span>C-1</span></li>
+            <li><span>C-2</span></li>
+            <li><span>C-3</span></li>
+          </ul>
+        </div>
+
+        <div class="block block-d">
+          <div class="title">
+            <span>Block_D</span>
+          </div>
+
+          <ul>
+            <li><span>D-1</span></li>
+            <li><span>D-2</span></li>
+            <li><span>D-3</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="social">
+        <a href="https://www.facebook.com" class="facebook">
+          <img src="./icons/fb.png">
+        </a>
+
+        <a href="https://twitter.com" class="twitter">
+          <img src="./icons/twitter.png">
+        </a>
+
+        <a href="https://www.linkedin.com" class="linkedin">
+          <img src="./icons/linkin.png">
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3">好友資料</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>姓名</td>
+            <td>海馬瀨人</td>
+            <td rowspan="4">
+              <img src="./icons/man1.png" class="seto-kaiba">
+            </td>
+          </tr>
+
+          <tr>
+            <td>性別</td>
+            <td>男</td>
+          </tr>
+
+          <tr>
+            <td>學號</td>
+            <td>052720411</td>
+          </tr>
+
+          <tr>
+            <td>興趣</td>
+            <td>決鬥</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3">好友資料</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>姓名</td>
+            <td>亞圖姆</td>
+            <td rowspan="4">
+              <img src="./icons/man2.png" class="yugi-mutou">
+            </td>
+          </tr>
+
+          <tr>
+            <td>性別</td>
+            <td>男</td>
+          </tr>
+
+          <tr>
+            <td>學號</td>
+            <td>052720547</td>
+          </tr>
+
+          <tr>
+            <td>興趣</td>
+            <td>決鬥</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <span>&#x5F35;&#x4F51;&#x76DB; <a href="&#109;&#97;ilto&#58;&#99;&#121;s1&#48;&#50;u&#64;&#99;s&#46;cc&#117;&#46;%65d%75&#46;tw">c&#121;s1&#48;2u&#64;cs&#46;c&#99;u&#46;edu&#46;tw</a></span>
+    </footer>
+  </body>
+</html>
