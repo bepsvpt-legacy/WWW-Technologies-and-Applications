@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <title>WWW Homework 1</title>
     <style>
-      html body {
+      html, body, ul {
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
       }
 
       header {
@@ -21,13 +20,11 @@
 
       header .effect {
         display: flex;
-        height: 100%;
         z-index: 1;
         cursor: pointer;
       }
 
       header .effect .block {
-        height: 100%;
         width: 6rem;
       }
 
@@ -36,7 +33,6 @@
         justify-content: center;
         align-items: center;
         height: 100%;
-        width: 100%;
       }
 
       header .effect .block .title:hover {
@@ -45,9 +41,11 @@
 
       header .effect .block ul {
         display: none;
-        margin: 0;
-        padding: 0;
         list-style-type: none;
+      }
+
+      header .effect .block:hover ul {
+        display: block;
       }
 
       header .effect .block ul li {
@@ -56,22 +54,6 @@
         align-items: center;
         height: 2rem;
         background-color: #22242d;
-      }
-
-      header .effect .block.block-a:hover ul {
-        display:block;
-      }
-
-      header .effect .block.block-b:hover ul {
-        display:block;
-      }
-
-      header .effect .block.block-c:hover ul {
-        display:block;
-      }
-
-      header .effect .block.block-d:hover ul {
-        display:block;
       }
 
       header .effect .block.block-a ul li:hover {
@@ -96,23 +78,20 @@
       }
 
       header .social img {
-        max-height: 3rem;
+        height: 3rem;
         transition-duration: 1s;
       }
 
       header .social .facebook img:hover {
         transform: scale(1.5);
-        transition-duration: 1s;
       }
 
       header .social .twitter img:hover {
         transform: scaleX(2);
-        transition-duration: 1s;
       }
 
       header .social .linkedin img:hover {
         transform: rotate(360deg);
-        transition-duration: 1s;
       }
 
       main {
@@ -156,18 +135,17 @@
 
       main table tbody tr td img.seto-kaiba:hover {
         transform: translateX(5rem);
-        transition-duration: 1s;
       }
 
       main table tbody tr td img.yugi-mutou:hover {
         transform: translateY(-5rem);
-        transition-duration: 1s;
       }
 
       footer {
         display: flex;
         align-items: center;
         height: 2rem;
+        overflow-x: hidden;
         background-color: #bcbcbc;
       }
 
@@ -188,9 +166,7 @@
     <header>
       <div class="effect">
         <div class="block block-a">
-          <div class="title">
-            <span>Block_A</span>
-          </div>
+          <span class="title">Block_A</span>
 
           <ul>
             <li><span>A-1</span></li>
@@ -200,9 +176,7 @@
         </div>
 
         <div class="block block-b">
-          <div class="title">
-            <span>Block_B</span>
-          </div>
+          <span class="title">Block_B</span>
 
           <ul>
             <li><span>B-1</span></li>
@@ -212,9 +186,7 @@
         </div>
 
         <div class="block block-c">
-          <div class="title">
-            <span>Block_C</span>
-          </div>
+          <span class="title">Block_C</span>
 
           <ul>
             <li><span>C-1</span></li>
@@ -224,9 +196,7 @@
         </div>
 
         <div class="block block-d">
-          <div class="title">
-            <span>Block_D</span>
-          </div>
+          <span class="title">Block_D</span>
 
           <ul>
             <li><span>D-1</span></li>
@@ -238,15 +208,15 @@
 
       <div class="social">
         <a href="https://www.facebook.com" class="facebook">
-          <img src="./icons/fb.png">
+          <img src="./icons/fb.png" alt="facebook">
         </a>
 
         <a href="https://twitter.com" class="twitter">
-          <img src="./icons/twitter.png">
+          <img src="./icons/twitter.png" alt="twitter">
         </a>
 
         <a href="https://www.linkedin.com" class="linkedin">
-          <img src="./icons/linkin.png">
+          <img src="./icons/linkin.png" alt="linkedin">
         </a>
       </div>
     </header>
@@ -264,7 +234,7 @@
             <td>姓名</td>
             <td>海馬瀨人</td>
             <td rowspan="4">
-              <img src="./icons/man1.png" class="seto-kaiba">
+              <img src="./icons/man1.png" alt="seto-kaiba" class="seto-kaiba">
             </td>
           </tr>
 
@@ -297,7 +267,7 @@
             <td>姓名</td>
             <td>亞圖姆</td>
             <td rowspan="4">
-              <img src="./icons/man2.png" class="yugi-mutou">
+              <img src="./icons/man2.png" alt="yugi-mutou" class="yugi-mutou">
             </td>
           </tr>
 
