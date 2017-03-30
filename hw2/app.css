@@ -1,0 +1,52 @@
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+table {
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table th, table td {
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home > * {
+  margin: .5rem 0;
+}
+
+.train-name {
+  background-color: #008082;
+  color: #fff;
+}
+
+.site-name span:first-child, .site-name span:last-child {
+  font-weight: bold;
+}
+
+.site-name, .site-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.baseball-logo {
+  width: 96px;
+}

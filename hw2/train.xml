@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<train_schedule>
+	<train>
+		<number>101</number>
+		<type>自強</type>
+		<start_station>臺中</start_station>
+		<Time_start>05:42</Time_start>
+		<pass_1>彰化</pass_1>
+		<Time_1>05:56</Time_1>
+		<pass_2>斗六</pass_2>
+		<Time_2>06:34</Time_2>
+		<pass_3>嘉義</pass_3>
+		<Time_3>06:58</Time_3>
+		<end_station>高雄</end_station>
+		<Time_end>08:31</Time_end>
+	</train>
+	<train>
+		<number>371</number>
+		<type>自強</type>
+		<start_station>臺中</start_station>
+		<Time_start>06:43</Time_start>
+		<pass_1>斗六</pass_1>
+		<Time_1>07:37</Time_1>
+		<pass_2>嘉義</pass_2>
+		<Time_2>08:01</Time_2>
+		<pass_3>高雄</pass_3>
+		<Time_3>09:30</Time_3>
+		<end_station>臺東</end_station>
+		<Time_end>12:02</Time_end>
+	</train>
+	<train>
+		<number>2311</number>
+		<type>區間</type>
+		<start_station>后里</start_station>
+		<Time_start>05:37</Time_start>
+		<pass_1>臺中</pass_1>
+		<Time_1>05:59</Time_1>
+		<pass_2>彰化</pass_2>
+		<Time_2>06:21</Time_2>
+		<pass_3>斗六</pass_3>
+		<Time_3>07:15</Time_3>
+		<end_station>嘉義</end_station>
+		<Time_end>07:48</Time_end>
+	</train>
+</train_schedule>

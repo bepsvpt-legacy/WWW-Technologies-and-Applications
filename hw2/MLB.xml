@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="MLB.xsl" type="text/xsl" ?>
+<mixedteams>
+	<baseball>
+		<Team>Red Sox</Team>
+		<League>American League</League>
+		<Color>Red</Color>
+		<BColor>Yellow</BColor>
+		<Image>http://content.sportslogos.net/logos/53/53/full/c0whfsa9j0vbs079opk2s05lx.png</Image>
+		<star>
+			<name>Babe Ruth</name>
+			<birth>1895/02/06</birth>
+		</star>
+		<Coach>John Farrell</Coach>
+		<Video>https://www.youtube.com/embed/xZ7oY0tA7qU</Video>
+	</baseball>
+	<baseball>
+		<Team>New York Yankees</Team>
+		<League>American League</League>
+		<Color>White</Color>
+		<BColor>Black</BColor>
+		<Image>http://content.sportslogos.net/logos/53/68/full/1256.png</Image>
+		<star>
+			<name>王建民</name>
+			<birth>1980/03/31</birth>
+		</star>
+		<Coach>Joe Girardi</Coach>
+		<Video>https://www.youtube.com/embed/VVb03HmyPOo</Video>
+	</baseball>
+	<baseball>
+		<Team>Chicago Cubs</Team>
+		<League>National League</League>
+		<Color>Blue</Color>
+		<BColor>Orange</BColor>
+		<Image>http://content.sportslogos.net/logos/54/54/full/q9gvs07u72gc9xr3395u6jh68.png</Image>
+		<star>
+			<name>Kris Bryant</name>
+			<birth>1992/01/04</birth>
+		</star>
+		<Coach>Joseph John Maddon</Coach>
+		<Video>https://www.youtube.com/embed/1e6PqoWJ-5U</Video>
+	</baseball>
+</mixedteams>
