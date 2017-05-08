@@ -16,11 +16,12 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned()->index();
-            $table->binary('image');
             $table->string('mime_type');
             $table->string('content')->nullable();
             $table->timestamps();
         });
+
+        DB::statement("ALTER TABLE `posts` ADD `image` LONGBLOB NOT NULL AFTER `user_id`");
     }
 
     /**
