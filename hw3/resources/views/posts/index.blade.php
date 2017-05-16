@@ -61,7 +61,7 @@
                       <span>{{ $post->likes->count() }} likes</span>
                     </span>
 
-                    <span class="pull-right">{{ $post->created_at->diffForHumans() }}</span>
+                    <span class="pull-right" data-toggle="tooltip" data-placement="top" title="{{ $post->created_at }}">{{ $post->created_at->diffForHumans() }}</span>
                   </div>
                 </div>
 
@@ -78,7 +78,7 @@
                         </div>
 
                         <div class="col-sm-3 text-right">
-                          <span class="inline-block">{{ $comment->created_at->diffForHumans() }}</span>
+                          <span class="inline-block" data-toggle="tooltip" data-placement="top" title="{{ $comment->created_at }}">{{ $comment->created_at->diffForHumans() }}</span>
 
                           @if(Auth::check() && Auth::user()->getKey() == $comment->user_id)
                             {!! Form::open(['route' => ['posts.comments.destroy', $post->getKey(), $comment->getKey()], 'method' => 'DELETE', 'class' => 'inline-block']) !!}
