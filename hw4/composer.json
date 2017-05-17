@@ -1,0 +1,6 @@
+{
+    "require": {
+        "illuminate/database": "5.0.*",
+        "vlucas/phpdotenv": "^2.4"
+    }
+}

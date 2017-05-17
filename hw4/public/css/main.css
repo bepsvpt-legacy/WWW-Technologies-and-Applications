@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 15vh;
+}
+
+main {
+  display: flex;
+  min-height: 85vh;
+}
+
+main > div {
+  width: 50%;
+}
+
