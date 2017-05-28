@@ -1,0 +1,93 @@
+html, body {
+  height: 100vh;
+  user-select: none;
+}
+
+main {
+  padding-top: 3rem;
+  height: 100vh;
+  background: url("images/backgrounds/main.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.character-list {
+  margin-top: 2rem;
+}
+
+.role {
+  position: relative;
+  margin: .5rem 0;
+  width: 72px;
+}
+
+.role img {
+  height: 72px;
+  width: 72px;
+}
+
+.role .check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action {
+  margin-top: 2rem;
+}
+
+.action img {
+  display: block;
+  margin: .5rem auto 0;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.dropzone-area {
+  position: relative;
+  margin-top: 2rem;
+  width: 11rem;
+  height: 12rem;
+  border: 2px dashed #CBCBCB;
+  background-color: rgba(14, 3, 3, 0.35);
+}
+
+.dropzone-area.hovered {
+  border: 2px dashed #2E94C4;
+}
+
+.dropzone-area input {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.dropzone-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.dropzone-preview {
+  height: 100%;
+}
+
+.dropzone-preview img {
+  height: 100%;
+  width: 100%;
+}
+
+#gaming {
+  margin-top: 2rem;
+}
