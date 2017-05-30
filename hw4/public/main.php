@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body class="container">
+  <body class="container-fluid">
     <header>
       <h2>Train Station Query System</h2>
 
