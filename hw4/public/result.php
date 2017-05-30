@@ -67,7 +67,6 @@ $data = Capsule::table('train_stations')
     ])
     ->having('distance', '<=', $range)
     ->orderBy('distance')
-    ->limit(10)
     ->get();
 
 $result = [
